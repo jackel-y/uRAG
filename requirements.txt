@@ -1,0 +1,9 @@
+causalnex
+matplotlib
+networkx
+numpy
+pandas
+pgmpy
+plotly
+scikit-learn
+seaborn
