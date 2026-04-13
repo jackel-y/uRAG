@@ -1,0 +1,4 @@
+SID,PIN,Name,Email,Next_Deadline,Module,Grade,Timetable,Mitigation_Status
+12345678,4821,John Doe,john.doe@student.aru.ac.uk,2026-04-15,MOD009730,75,Monday 10am-12pm Room 101,Approved
+87654321,1234,Jane Smith,jane.smith@student.aru.ac.uk,2026-04-20,MOD009730,82,Tuesday 2pm-4pm Room 202,N/A
+11223344,5566,Alice Brown,alice.brown@student.aru.ac.uk,2026-04-10,MOD009730,68,Wednesday 9am-11am Room 303,Pending

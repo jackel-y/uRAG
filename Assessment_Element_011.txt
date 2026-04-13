@@ -1,0 +1,97 @@
+Assessment Element 011
+MOD009730 - Prompt Engineering and Generative AI
+
+Design and Implementation of an Agentic Retrieval-Augmented Generation (RAG) for University Students
+
+In this assessment, students are required to design and implement a Retrieval-Augmented Generation (RAG) system or an Agentic AI system that acts as a virtual “Genie” to support university students. The system should be capable of answering questions related to Anglia Ruskin University (ARU) academic regulations and student-related processes, using retrieved information from official university documentation. The system does not require a graphical user interface. Instead, the focus is on backend design, data ingestion, retrieval, reasoning, authentication, and system architecture, demonstrating sound engineering and AI design principles.
+
+Important: 
+This assessment is intentionally designed to be open-ended and somewhat challenging. While the core objectives and functional requirements are clearly specified, the details of the system design, implementation approach, and functionality are left to the student’s creativity and technical judgement. Students are encouraged to make informed design decisions, justify their architectural choices, and explore innovative solutions that align with the overall goals of the assessment. There is no single “correct” implementation, and marks will be awarded based on the quality of design, reasoning, robustness, and appropriateness of the chosen approach.
+RAG and Agentic AI systems are increasingly recognised as core skills for employability in the generative AI job market. This assessment is designed to help (push) you develop practical experience in designing and implementing real-world generative AI systems that combine large language models with external knowledge sources, tools, and structured data.
+Important: Use of Generative AI in the development of this assessment is permitted; however, students must demonstrate a clear understanding of the code during their presentation session (Assessment Element 012).
+
+
+Objectives: 
+The proposed AI system should:
+	•	Act as an intelligent assistant capable of answering student queries about:
+	•	Academic regulations (e.g. progression, assessment, mitigation, resits)
+	•	University policies and procedures
+	•	Individual deadlines, timetables, and assessment-related information
+	•	Use retrieval-augmented generation (RAG) and/or agentic workflows to ensure responses are grounded in authoritative valid university documents rather than relying solely on the base language model.
+	•	Demonstrate simple handling of personal student data through basic authentication mechanisms. 
+Note: The authentication method does not need to be cryptographically robust; a straightforward approach, such as verifying a small set of digits from a student PIN, is sufficient. 
+Example interaction:
+	•	Student: “What is my next coursework deadline?”
+	•	System: “This query requires access to personal records. Please enter your SID.”
+	•	Student: “SID: 12345678”
+	•	System: “Please enter your 4-digit PIN (or digits 2 and 4 of your PIN).”
+	•	Student: “PIN: 4821” (or “digits 2 and 4: 8 and 1”)
+	•	System: “Authentication successful. Your next deadline is …”
+
+
+Core Functional Requirements
+1. Document Collection and Knowledge Base
+Students must identify, collect, and curate a substantial set of publicly available ARU documents, such as:
+	•	Academic Regulations
+	•	Assessment Regulations
+	•	Student Handbooks
+	•	Programme or Faculty guidance
+	•	Mitigation and appeals procedures
+These documents must be:
+	•	Properly pre-processed (e.g. chunking, cleaning, metadata tagging)
+	•	Stored in a suitable vector database or retrieval mechanism
+	•	Referenced or cited in generated responses where appropriate
+2. RAG or Agentic AI Design
+Students must design either:
+	•	A Retrieval-Augmented Generation (RAG) system or (if your intended design requires) 
+	•	An Agentic AI system (e.g. tool-using agents, planner–executor architecture, multi-step reasoning)
+The system should:
+	•	Retrieve relevant document passages based on user queries
+	•	Use an LLM to generate accurate, context-aware answers
+	•	Clearly justify architectural choices
+Students must select and justify their choice of LLM, which may include:
+	•	Open-source models
+	•	Locally hosted models
+Justification should consider performance, cost, privacy, and deployment constraints.
+
+3. Student Records and Personalisation
+The system must be capable of handling student-specific queries, such as:
+	•	Marks or grades
+	•	Assessment deadlines
+	•	Timetables
+	•	Progression status
+	•	Or what ever you think a student may need from such system 
+To support this:
+	•	Students must create dummy datasets representing student records (e.g. CSV, JSON, database tables)
+	•	Alternatively, records may be accessed via dummy or simulated APIs
+	•	Creativity is encouraged in dataset design, as long as it remains realistic and well-structured
+4. Authentication and Access Control
+For queries involving personal or sensitive student data, the system must include a basic authentication mechanism, such as:
+	•	PIN-based authentication
+	•	Any other lightweight but reasonable access-control approach
+The system should:
+	•	Allow general queries without authentication (e.g. academic regulations)
+	•	Require authentication for personalised responses
+Technical Constraints and Scope
+	•	No frontend or UI development is required
+	•	Interaction may occur via:
+	•	Command line
+	•	Jupyter Notebook
+	•	The emphasis is on system design, data flow, reasoning logic, and robustness
+
+Deliverables
+Students must submit:
+	•	Source Code Repository (Python Project/Code)
+	•	Clearly structured and well-commented
+	•	Example queries and outputs
+	•	Sample interactions
+	•	For ease of submission, you do not need to submit your RAG knowledge base. 
+
+
+
+
+Good Luck!
+
+
+
+
